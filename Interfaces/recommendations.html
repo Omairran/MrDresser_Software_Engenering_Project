@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommendations | MrDresser</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .recommendations-section {
+            padding: 120px 0 80px;
+        }
+        
+        .recommendation-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .recommendation-filters {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+        
+        .filter-btn {
+            padding: 8px 15px;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .filter-btn:hover, .filter-btn.active {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .recommendation-intro {
+            background-color: var(--card-bg);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+        
+        .recommendation-intro h3 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .recommendation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .recommendation-card .product-image {
+            height: 200px;
+            background-color: var(--dark-bg);
+            background-size: cover;
+            background-position: center;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .recommendation-card h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        
+        .recommendation-card p {
+            color: var(--text-gray);
+            margin-bottom: 15px;
+            font-size: 14px;
+        }
+        
+        .recommendation-card .product-price {
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .outfit-type {
+            display: inline-block;
+            padding: 3px 10px;
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            border-radius: 20px;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .recommendation-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .recommendation-filters {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">MrDresser</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="recommendations.html" class="active">Recommendations</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="user-avatar">A</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Recommendations Section -->
+    <section class="recommendations-section">
+        <div class="container">
+            <div class="recommendation-header">
+                <h2>Your Personalized Recommendations</h2>
+                <div>
+                    <button class="btn">Refresh Recommendations</button>
+                </div>
+            </div>
+            
+            <div class="recommendation-filters">
+                <button class="filter-btn active">All</button>
+                <button class="filter-btn">Casual</button>
+                <button class="filter-btn">Business</button>
+                <button class="filter-btn">Formal</button>
+                <button class="filter-btn">Sports</button>
+                <button class="filter-btn">Evening</button>
+            </div>
+            
+            <div class="recommendation-intro card">
+                <h3>Recommended for: Business Casual at Work (69°F / 20°C, Sunny)</h3>
+                <p>Based on: Your oval face shape, medium warm skin tone, and preference for classic styles</p>
+                <p>Color Palette: Autumn colors (earth tones, warm hues)</p>
+            </div>
+            
+            <div class="recommendation-grid">
+                <div class="recommendation-card card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <span class="outfit-type">Business Casual</span>
+                    <h3>Classic Business Casual</h3>
+                    <p>A timeless combination of navy blazer, light blue shirt, and beige chinos perfect for your workplace.</p>
+                    <div class="product-price">$123.99</div>
+                    <button class="btn" style="width: 100%;">View Details</button>
+                </div>
+                
+                <div class="recommendation-card card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1520975916090-3105956dac38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <span class="outfit-type">Smart Casual</span>
+                    <h3>Smart Casual Ensemble</h3>
+                    <p>Dark denim jeans with a crisp white shirt and brown leather shoes for a polished yet relaxed look.</p>
+                    <div class="product-price">$89.99</div>
+                    <button class="btn" style="width: 100%;">View Details</button>
+                </div>
+                
+                <div class="recommendation-card card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1539533018447-63fcce2678e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <span class="outfit-type">Formal Office</span>
+                    <h3>Formal Office Look</h3>
+                    <p>Charcoal gray suit with a light pink dress shirt and burgundy tie for important meetings.</p>
+                    <div class="product-price">$299.99</div>
+                    <button class="btn" style="width: 100%;">View Details</button>
+                </div>
+                
+                <div class="recommendation-card card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1527719327859-c6ce80353573?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <span class="outfit-type">Weekend Casual</span>
+                    <h3>Weekend Casual</h3>
+                    <p>Comfortable yet stylish with olive green chinos, striped tee, and white sneakers.</p>
+                    <div class="product-price">$75.99</div>
+                    <button class="btn" style="width: 100%;">View Details</button>
+                </div>
+                
+                <div class="recommendation-card card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <span class="outfit-type">Date Night</span>
+                    <h3>Date Night Outfit</h3>
+                    <p>Dark jeans, fitted maroon shirt, and leather jacket for a stylish evening look.</p>
+                    <div class="product-price">$218.99</div>
+                    <button class="btn" style="width: 100%;">View Details</button>
+                </div>
+                
+                <div class="recommendation-card card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <span class="outfit-type">Casual Comfort</span>
+                    <h3>Casual Comfort</h3>
+                    <p>Relaxed fit jeans with a soft cotton hoodie and comfortable sneakers for everyday wear.</p>
+                    <div class="product-price">$65.99</div>
+                    <button class="btn" style="width: 100%;">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #111; padding: 60px 0 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">MrDresser</h3>
+                    <p style="color: #adb5bd;">Your personal fashion assistant powered by AI and machine learning to deliver perfect outfit recommendations.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="#" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;">f</a>
+                        <a href="#" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;">t</a>
+                        <a href="#" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;">i</a>
+                        <a href="#" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;">l</a>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="profile.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Profile</a></li>
+                        <li style="margin-bottom: 10px;"><a href="recommendations.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Recommendations</a></li>
+                        <li style="margin-bottom: 10px;"><a href="vendors.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Vendors</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">About</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">Features</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Personalized Profiles</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Weather-Aware</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Vendor Network</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">AI Recommendations</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Style Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">Contact Us</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="mailto:info@mrdresser.com" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">info@mrdresser.com</a></li>
+                        <li style="margin-bottom: 10px;"><a href="tel:+1234567890" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">+1 (234) 567-890</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Support Center</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); color: #adb5bd; font-size: 14px;">
+                <p>&copy; 2025 MrDresser. All rights reserved. | <a href="#" style="color: #adb5bd; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #adb5bd; text-decoration: none;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

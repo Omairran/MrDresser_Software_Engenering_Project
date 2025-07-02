@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | MrDresser</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-section {
+            padding: 120px 0 80px;
+        }
+        
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .about-content h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .about-content p {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .team-member {
+            text-align: center;
+        }
+        
+        .team-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: var(--dark-bg);
+            margin: 0 auto 20px;
+            background-size: cover;
+            background-position: center;
+            border: 3px solid var(--primary-color);
+        }
+        
+        .team-member h3 {
+            margin-bottom: 5px;
+        }
+        
+        .team-member p {
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        .team-social {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .team-social a {
+            color: var(--text-light);
+            font-size: 18px;
+            transition: color 0.3s;
+        }
+        
+        .team-social a:hover {
+            color: var(--primary-color);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">MrDresser</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="recommendations.html">Recommendations</a></li>
+                    <li><a href="vendors.html">Vendors</a></li>
+                    <li><a href="about.html" class="active">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="user-avatar">A</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content card" style="padding: 40px;">
+                <h2>About MrDresser</h2>
+                <p>MrDresser is revolutionizing the way people choose their outfits by combining artificial intelligence with fashion expertise. Our mission is to simplify the process of selecting the perfect outfit for any occasion while helping users discover their personal style.</p>
+                
+                <p>Founded in 2025 by fashion enthusiasts and technology experts, MrDresser bridges the gap between personal styling and cutting-edge technology. We believe that everyone deserves to look their best without the stress of deciding what to wear.</p>
+                
+                <h2 style="margin-top: 40px;">Our Technology</h2>
+                <p>At the heart of MrDresser is our proprietary AI engine that analyzes multiple factors to deliver personalized recommendations:</p>
+                <ul style="margin-bottom: 20px; padding-left: 20px;">
+                    <li style="margin-bottom: 10px;">Biometric analysis (face shape, skin tone, body type)</li>
+                    <li style="margin-bottom: 10px;">Real-time weather conditions</li>
+                    <li style="margin-bottom: 10px;">Event context (work, casual, formal, etc.)</li>
+                    <li style="margin-bottom: 10px;">Personal style preferences</li>
+                    <li style="margin-bottom: 10px;">Current fashion trends</li>
+                </ul>
+                
+                <p>Our technology integrates with leading weather APIs and uses advanced computer vision algorithms to provide accurate and relevant suggestions.</p>
+                
+                <h2 style="margin-top: 40px;">Meet Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="team-avatar" style="background-image: url('https://randomuser.me/api/portraits/men/32.jpg');"></div>
+                        <h3>Umair Ahmad</h3>
+                        <p>Co-Founder & CEO</p>
+                        <div class="team-social">
+                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-avatar" style="background-image: url('https://images.pexels.com/photos/771742/pexels-photo-771742.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');"></div>
+                        <h3>Aqeel Abbas Khan</h3>
+                        <p>Co-Founder & CTO</p>
+                        <div class="team-social">
+                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background-color: #111; padding: 60px 0 20px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">MrDresser</h3>
+                    <p style="color: #adb5bd;">Your personal fashion assistant powered by AI and machine learning to deliver perfect outfit recommendations.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 20px;">
+                        <a href="https://facebook.com" target="_blank" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://linkedin.com" target="_blank" style="color: var(--text-light); font-size: 20px; transition: color 0.3s;"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">Quick Links</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="index.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Home</a></li>
+                        <li style="margin-bottom: 10px;"><a href="profile.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Profile</a></li>
+                        <li style="margin-bottom: 10px;"><a href="recommendations.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Recommendations</a></li>
+                        <li style="margin-bottom: 10px;"><a href="vendors.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Vendors</a></li>
+                        <li style="margin-bottom: 10px;"><a href="about.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">About</a></li>
+                        <li style="margin-bottom: 10px;"><a href="contact.html" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">Features</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Personalized Profiles</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Weather-Aware</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Vendor Network</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">AI Recommendations</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Style Analysis</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="font-size: 18px; margin-bottom: 20px; position: relative; padding-bottom: 10px; color: var(--text-light);">Contact Us</h3>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="mailto:info@mrdresser.com" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">info@mrdresser.com</a></li>
+                        <li style="margin-bottom: 10px;"><a href="tel:+1234567890" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">+1 (234) 567-890</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Support Center</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#" style="color: #adb5bd; text-decoration: none; transition: color 0.3s;">Feedback</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.1); color: #adb5bd; font-size: 14px;">
+                <p>© 2025 MrDresser. All rights reserved. | <a href="#" style="color: #adb5bd; text-decoration: none;">Privacy Policy</a> | <a href="#" style="color: #adb5bd; text-decoration: none;">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
